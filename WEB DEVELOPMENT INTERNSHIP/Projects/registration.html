@@ -1,0 +1,187 @@
+<!--Question: Student Registration Form
+Objective: Create a complete Student Registration Form using HTML that demonstrates your understanding of HTML Form Elements, Input Types & Attributes, Labels & Form Controls, and Native HTML Form Validation.
+Requirements
+Q1. Basic Form Structure
+Create an HTML document with:
+- Title: Student Registration Form
+- A main heading: Student Registration Form
+- A form element to contain all registration fields.
+Q2. Personal Information
+Create a fieldset with the legend "Personal Information" containing:
+1. Full Name – Text input (required, minimum 3 characters)
+2. Email – Email input (required)
+3. Password – Password input (required, minimum 8 characters)
+4. Confirm Password – Password input (required)
+5. Age – Number input (required, minimum 18 and maximum 30)
+6. Date of Birth – Date input (required)
+Q3. Gender Selection
+Create a separate fieldset with the legend "Gender" containing:
+- Male
+- Female
+- Other
+Use radio buttons. All radio buttons must belong to the same group.
+
+Q4. Course Selection
+Create a dropdown list with the following options:
+- HTML
+- CSS
+- JavaScript
+- Python
+The user must select a course before submitting.
+
+Q5. Skills
+Create checkboxes for the following skills:
+- HTML
+- CSS
+- JavaScript
+- Python
+The user should be able to select multiple skills.
+
+Q6. Contact Information
+Add the following fields:
+1. Phone Number – Telephone input (required, exactly 10 digits)
+2. Address – Textarea
+3. Website – URL input
+Q7. Form Validation
+Apply appropriate validation attributes to ensure:
+- Full Name cannot be empty and must contain at least 3 characters.
+- Email must be in a valid email format.
+- Password must contain at least 8 characters.
+- Age must be between 18 and 30.
+- Date of Birth is compulsory.
+- Course selection is compulsory.
+- Phone number must contain exactly 10 digits.
+- Website must be in a valid URL format.
+Q8. Additional Controls
+At the end of the form, add:
+- A Terms & Conditions checkbox (required).
+- A Submit button.
+- A Reset button.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post">
+
+    
+    <fieldset>
+        <legend>Personal Information</legend>
+
+    <div class="field">
+        <label for="fullname">Full Name <span class="required">*</span></label>
+        <input type="text" id="fullname" name="fullname"
+            required minlength="3" placeholder="Enter your full name">
+    </div>
+
+    <div class="field">
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email"
+            required placeholder="you@example.com">
+    </div>
+
+    <div class="field">
+        <label for="password">Password <span class="required">*</span></label>
+        <input type="password" id="password" name="password"
+            required minlength="8" placeholder="At least 8 characters">
+    </div>
+
+    <div class="field">
+        <label for="confirm-password">Confirm Password <span class="required">*</span></label>
+        <input type="password" id="confirm-password" name="confirm_password"
+            required placeholder="Re-enter your password">
+    </div>
+
+    <div class="field">
+        <label for="age">Age <span class="required">*</span></label>
+        <input type="number" id="age" name="age"
+            required min="18" max="30" placeholder="18 to 30">
+    </div>
+
+    <div class="field">
+        <label for="dob">Date of Birth <span class="required">*</span></label>
+        <input type="date" id="dob" name="dob" required>
+    </div>
+    </fieldset>
+
+    <fieldset>
+    <legend>Gender</legend>
+    <div class="inline">
+        <label for="gender-male">
+        <input type="radio" id="gender-male" name="gender" value="male" required> Male
+        </label>
+        <label for="gender-female">
+        <input type="radio" id="gender-female" name="gender" value="female"> Female
+        </label>
+        <label for="gender-other">
+        <input type="radio" id="gender-other" name="gender" value="other"> Other
+        </label>
+    </div>
+    </fieldset>
+
+    
+    <div class="field">
+    <label for="course">Course <span class="required">*</span></label>
+    <select id="course" name="course" required>
+        <option value="" selected disabled>-- Select a course --</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+    </select>
+    </div>
+
+    <fieldset>
+        <legend>Skills</legend>
+    <div class="inline">
+        <label for="skill-html">
+            <input type="checkbox" id="skill-html" name="skills" value="html"> HTML
+        </label>
+        <label for="skill-css">
+            <input type="checkbox" id="skill-css" name="skills" value="css"> CSS
+        </label>
+        <label for="skill-js">
+            <input type="checkbox" id="skill-js" name="skills" value="javascript"> JavaScript
+        </label>
+        <label for="skill-python">
+            <input type="checkbox" id="skill-python" name="skills" value="python"> Python
+        </label>
+    </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Information</legend>
+
+        <div class="field">
+        <label for="phone">Phone Number <span class="required">*</span></label>
+        <input type="tel" id="phone" name="phone" maxlength="10" placeholder="10-digit number"title="Enter exactly 10 digits (numbers only)">
+        </div>
+
+        <div class="field">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+        </div>
+
+        <div class="field">
+        <label for="website">Website</label>
+        <input type="url" id="website" name="website"placeholder="https://example.com">
+        </div>
+    </fieldset>
+
+    
+    <div class="field">
+        <label for="terms">
+        <input type="checkbox" id="terms" name="terms" required>
+        I agree to the Terms &amp; Conditions <span class="required">*</span>
+        </label>
+    </div>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+
+</body>
+</html>

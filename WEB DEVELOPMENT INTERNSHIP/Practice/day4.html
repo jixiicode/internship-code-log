@@ -1,0 +1,296 @@
+<!--Create a basic HTML form that contains:
+1. A form container.
+2. A label that says "Full Name".
+3. A text input for the user's name.
+4. A submit button.-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Form</title>
+    </head>
+    <body>
+        <h1>HTML Form</h1>
+        <form>
+            <label for="Name">FULL NAME:</label>
+            <input type="text" id="Name">
+            <button type="submit">submit</button>
+        </form>
+    </body>
+</html>
+
+<!--Create a form containing a Course Selection dropdown.
+Requirements:
+1. Add a label named Select Course.
+2. Create a dropdown using the appropriate HTML element.
+3. Add these four options:
+   - HTML
+   - CSS
+   - JavaScript
+   - Python
+4. Properly associate the label with the dropdown.
+5. Add a submit button.-->
+<hr>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Course Selection</title>
+    </head>
+    <body>
+        <h1>Course Selection Form</h1>
+        <form>
+            <label for="Course">Select Course</label>
+            <select id="Course" name="Course">
+                <option>Choice</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+            </select>
+            <button type="submit">submit</button>
+        </form>
+    </body>
+</html>
+
+<!--Create a feedback form with:
+1. Heading: Feedback Form
+2. Label: Your Feedback
+3. Multiline text area
+4. Proper label association using for and id
+5. Submit button-->
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Feedback Form</title>
+    </head>
+    <body>
+        <h1>FEEDBACK FORM</h1>
+        <form>
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
+
+<!--Create a Gender Selection Form with these requirements:
+1. Heading: Gender Selection
+2. Label: Select Gender
+3. Three radio options:
+   - Male
+   - Female
+   - Other
+4. All radio buttons must belong to the same group.
+5. Each option must have its own properly associated label.
+6. Add a submit button.-->
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Gender Selection</title>
+    </head>
+    <body>
+        <h1>Gender Selection</h1>
+        <form>
+            <label for="Gender">Select Gender</label><br>
+            <input type="radio"value="male" name="Gender" id="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" value="female"name="Gender" id="Female">
+            <label for="Female">Female</label><br>
+            <input type="radio" value="others" name="Gender" id="Others">
+            <label for="Others">Others</label><br>
+            <button type="submit">
+            submit</button>
+        </form>
+    </body>
+</html>
+
+<!--Create a Skills Selection Form.
+
+Requirements:
+1. Heading: Skills Selection
+2. Label or heading: Select Your Skills
+3. Add checkboxes for:
+   - HTML
+   - CSS
+   - JavaScript
+   - Python
+4. Each checkbox should have a unique ID.
+5. Each checkbox should have a label associated with it.
+6. Add a submit button.-->
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Skills Selection Form</title>
+    </head>
+    <body>
+        <h1>Skills Selection</h1>
+        <form>
+            <label for="skill">Skill Selection</label><br>
+            <input type="checkbox"value="html" name="skill" id="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" value="CSS"name="skill" id="CSS">
+            <label for="CSS">CSS</label><br>
+            <input type="checkbox" value="Javascript" name="skill" id="Javascript">
+            <label for="Javascript">JavaScript</label><br>
+            <input type="checkbox" value="Python" name="skill" id="Python">
+            <label for="Python">Python</label><br>
+            <button type="submit">
+            submit</button>
+        </form>
+    </body>
+</html>
+
+
+<!--Personal Information Form
+Create a form containing these three fields:
+Field	Input type	Placeholder
+Full Name	text	Enter your full name
+Email	email	Enter your email
+Password	password	Enter your password
+
+Requirements
+- Create a form with a heading.
+- Add all three inputs.
+- Add a proper label for each input using for and id.
+- Add a name attribute to each input.
+- Add the specified placeholders.
+- Add a Submit button.
+- Maintain proper indentation.-->
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Information Form </title>
+    </head>
+    <body>
+        <h1>Personal Information Form</h1>
+        <form>
+            <label for="f.name">Full Name:</label>
+            <input type="text" id="f.name" name="f.name" placeholder="Enter your full name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email id"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
+
+<!--Create a Student Details Form containing:
+1. Student Name – text input
+2. Phone Number – number input
+3. Date of Birth – date input
+4. Age – number input
+5. Proper labels for all fields.
+6. Unique IDs and name attributes.
+7. Submit button.-->
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Students details form</title>
+    </head>
+    <body>
+        <h1>Students details form</h1>
+    <form>
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name"><br>
+        <label for="P.number">Phone Number:</label>
+        <input type="tel" id="P.number" name="P.number" placeholder="Enter your Phone Number"><br>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" placeholder="Enter your Date of Birth"><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="16" max="25" placeholder="Enter your age"><br>
+        <button type="submit">Submit</button>
+    </form></body>
+</html>
+
+<!--1. Gender
+- Male
+- Female
+- Other
+- Use radio buttons.
+2. Interests
+- Coding
+- Reading
+- Sports
+- Music
+- Use checkboxes so the user can select multiple interests.
+3. Additional requirements
+- Create a heading: Student Preferences.
+- Add appropriate labels for all fields.
+- Use unique IDs.
+- Use appropriate name and value attributes.
+- Add a submit button.-->
+<hr>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Preferences Form</title>
+    </head>
+    <body>
+        <h1>Student Preferences form</h1>
+        <form>
+            <label for="Gender">Gender</label><br>
+            <input type="radio" id="Male" name="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" name="Female">
+            <label for="Female">Female</label><br>
+            <input type="radio" id="others" name="others">
+            <label for="others">Others</label><br>
+            
+            <label for="Interest">Interests</label><br>
+            <input type="checkbox" id="coding" name="Interest" value="coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="reading" name="Interest" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="cooking" name="Interest" value="cooking">
+            <label for="cooking">Cooking</label>
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+</html>
+
+
+<!--reate a form containing:
+1. A Personal Information group using <fieldset>.
+2. A <legend> titled "Personal Information".
+3. Full Name and Email inputs.
+4. Proper labels associated with both inputs.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Information</title>
+
+    </head>
+    <body>
+        <h1>Personal Information</h1>
+        <form>
+            
+            <fieldset>
+                <legend >Information</legend>
+                <label for="name" >Name:</label>
+                <input type="text" id="name" name="name">
+                </fieldset><fieldset>
+                <label for="email" >Email:</label>
+                <input type="email" id="email" name="email">
+                
+            </fieldset>
+        </form>
+    </body>
+</html>
