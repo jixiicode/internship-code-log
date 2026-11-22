@@ -1,0 +1,232 @@
+<!--our task is to build a student portal containing:
+1. Header with website name
+2. Navigation bar
+3. About section
+4. Courses list
+5. Course timetable using HTML tables
+6. Learning resources
+7. Student registration form
+8. Form validation
+9. Semantic HTML structure
+10. Footer-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <title>Student Portal</title>
+    </head>
+    <body>
+        <header>
+            <h1>Future Skills Academy</h1>
+            <p>Learn Today, Build tomorrow</p>
+
+            <nav>
+                <a href="#home">Home</a><br>
+                <a href="#aboutus">About Us</a><br>
+                <a href="#courses">Courses</a><br>
+                <a href="#timetable">Timetable</a><br>
+                <a href="#resources">Resources</a><br>
+                <a href="#registration">Registration</a><br>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section id="home"></section>
+            
+            <section id="aboutus">
+            <h2>About Future Skills Academy </h2>
+            <p>Future Skills Academy is an educational institute dedicated
+                 to helping students develop technical and professional skills. 
+                 Our courses focus on practical learning, industry-relevant knowledge, and hands-on projects.</p><br>
+            <p>We aim to prepare students for future career opportunities in technology through
+                 structured learning programs and expert guidance.</p>
+                 </section>
+            <section id="courses">
+            <h2>Course Name</h2>
+            <div>
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, and JavaScript to build modern websites.</p>
+                <h4>Duartion:3 Months</h4>
+                <img src="../Practice/images/wd.jpg" alt="web devlopment image" width="250">
+            </div>
+
+            <div>
+                <h3>Python Programming</h3>
+                <p>Learn programming fundamentals, logic, and Python applications.</p>
+                <h4>Duartion:2 Months</h4>
+                <img src="../Practice/images/pp.jpg" alt="web devlopment image" width="250">
+            </div>
+
+            <div>
+                <h3>Java Programming</h3>
+                <p>Understand object-oriented programming and Java fundamentals.</p>
+                <h4>Duartion:3 Months</h4>
+                <img src="../Practice/images/jp.jpg" alt="web devlopment image" width="250">
+            </div>
+
+            <div>
+                <h3>Database Management</h3>
+                <p>Learn databases, SQL queries, and database management basics.</p>
+                <h4>Duartion:1.5 Months</h4>
+                <img src="../Practice/images/db.jpg" alt="web devlopment image" width="250">
+            </div></section>
+            <section id="timetable">
+                <table>
+                    <thead>Weekly Class Schedule</thead>
+                    <caption>Weekly Time table </caption>
+                    <tbody>
+                    <tr>
+                        <th>Date</th>
+                        <th>Course</th>
+                        <th>Time</th>
+                        <th>Instructor</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Web Development</td>
+                        <td>10:00AM-12:00PM</td>
+                        <td>Rahul Sharma</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Python Programming</td>
+                        <td>10:00AM-12:00PM</td>
+                        <td>Priya Patel</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Java Programming</td>
+                        <td>11:00AM-1:00PM</td>
+                        <td>Amit Verma</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Database Management</td>
+                        <td>10:00AM-12:00PM</td>
+                        <td>Neha Shah</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Web Development Practice</td>
+                        <td>2:00PM-4:00PM</td>
+                        <td>Rahul Sharma</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Project Workshop</td>
+                        <td>11:00AM-11:00PM</td>
+                        <td>Faculty Team</td>
+                    </tr>
+                </table>
+            </tbody>
+            </section>
+
+            <section id="resources">
+                <h2>Learning Resources</h2>
+                <div>
+                    <h3>HTML Documentation</h3>
+                    <p>Learn HTML structure and elements.</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a>
+                </div>
+                <div>
+                    <h3>Python Tutorials</h3>
+                    <p>Beginner Python prograamming.</p>
+                    <a href="https://www.w3schools.com/python/">W3Schools</a>
+                </div>
+                <div>
+                    <h3>Java Tutorials</h3>
+                    <p>Learn Java Fundamentals</p>
+                    <a href="https://docs.oracle.com/en/java/">Java Official Documentation</a>
+                </div>
+                <div>
+                    <h3>Web Development Guide</h3>
+                    <p>Learn how websites are built</p>
+                    <a href="https://www.w3schools.com/">W3Schools</a>
+                </div>
+            </section>
+
+            <section id="registration">
+                <h2>Student Course Registartion</h2>
+                <div>
+                    <label>Student Course Registration</label><br>
+                    <label for="f.name">Full Name:</label>
+                    <input type="text" id="f.name" name="f.name" required><br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="Number">Phone Number:</label>
+                    <input type="tel" id="Number" name="Number" required><br>
+                    <label for="dob">Date of birth:</label>
+                    <input type="date" id="dob" name="dob" required></br>
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" id="male" name="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="other">
+                    <label for="other">Others</label><br>
+                    <label for="Courseselect">Course selections</label>
+                    <select id="Courseselect" required >
+                        <option>none</option>
+                        <option>Web development</option>
+                        <option>Python programing</option>
+                        <option>Java Programming</option>
+                        <option>Database management</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Edclevel">Education level</label>
+                    <select id="Edclevel">
+                        <option>None</option>
+                        <option>12th Pass</option>
+                        <option>Undergraduate</option>
+                        <option>Graduate</option>
+                        <option>Postgraduate</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Address">Address:</label>
+                    <input type="text" required id="address" name="address">
+
+                </div>
+                <div>
+                    <label for="plmode">Preferred Learning Mode</label><br>
+                    <input type="checkbox" id="online">
+                    <label for="online">online</label>
+                    <input type="checkbox" id="offline">
+                    <label for="offline">offline</label>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+
+                </div>
+                <div>
+                    <label for="c.password">Confirm Password</label>
+                    <input type="password" id="c.password" name="c.password"minlength="8" required>
+                </div>
+                <div>
+                    <label for="tandc">Terms and condition</label><br>
+                    <input type="checkbox" id="terms" >
+                    <label for="terms">hereby accepting all terms</label><br>
+                    <input type="checkbox" id="conditions">
+                    <label for="conditions">Conditions</label> <br>
+                    <button type="submit">submit  the form</button><br>
+                    <button type="reset">Reset the form</button>
+
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Future Skills Academy</h2>
+                <a href="info@futureskillsacademy.example">Email</a>
+                <p>PHONE:<span>+91 98765 43210</span></p>
+                <p>Address:- Learning Street, Ahmedabad, Gujarat, India</p>
+            </section>
+        </main>
+        <footer>
+            <p>Future Skills Academy</p>
+            <p>"© 2026 Future Skills Academy. All rights reserved."</p>
+        </footer>
+    </body>
+    </html>

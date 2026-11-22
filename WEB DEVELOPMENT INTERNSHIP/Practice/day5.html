@@ -609,34 +609,54 @@ Use at least two non-semantic elements (div or span) appropriately somewhere on 
 </footer>
 </body>
 </html>
-<!--Create a webpage titled My Personal Blog.
+<!--Create a personal blog webpage using HTML.
 
-Requirements:
+Your webpage should contain:
+- Header with blog name
+- Navigation menu
+- Main section
+- At least 2 blog posts
+- Blog post titles and paragraphs
+- Author information
+- Images with appropriate alt attributes
+- Date of publication
+- Sidebar containing About Me and Recent Posts
+- Footer
+- Appropriate semantic HTML5 elements-->
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Personal Blog Webpage</title>
+    </head>
+    <body><header>
+        <h1>My Blog</h1>
+        <nav>
+            <a href="#menu">menu</a>
+        </nav>
+        </header>
+        <main>
+            <section id="menu">
+                <div>
+                    <h2>blog1 </h2><br>
+                    <p>this my 1 paragraph</p>
+                    <p>written by:<span>author 21</span></p>
+                    <img src="images/flower.jpg" alt="Image of flower">
+                    <p>publication date:<span>23-nov-2025</span></p>
+                </div>
+                <div>
+                    <h2>blog 2</h2>
+                    <p>this is my second paragraph</p>
+                    <p>written by:<span>author2</span></p>
+                    <img src="images/whiteflower.jpg" alt="A image of white flower">
+                    <p>publication date:<span>23-nov-2025</span></p>
 
-1. Use a semantic <header> containing:
-- Main heading: My Personal Blog
-- A short tagline.
-2. Use a semantic <nav> with three links:
-- Home
-- Blog Posts
-- About Me
-3. Use <main> to contain the main content.
-4. Create two blog articles using <article>:
-- My HTML Learning Journey
-- Why Practice Is Important
-5. Each article must contain:
-- A heading
-- At least two paragraphs
-- A publication date using an appropriate semantic element.
-6. Create an <aside> containing a section titled About the Author with a short paragraph.
-7. Use at least one <section> to group related content.
-8. Use at least one <div> and one <span> appropriately.
-9. Include a semantic <footer> containing:
-© 2026 My Personal Blog
-Concepts being tested
-- Semantic versus non-semantic elements
-- <header>, <nav>, <main>, <article>
-- <section>, <aside>, <footer>
-- <time>
-- <div> and <span>
-- Correct nesting-->
+                </div>
+                <aside>this armticles are written by different poets</aside>
+            </section>
+        </main>
+        <footer>all copyright of authors</footer>
+    </body>
+</html>
