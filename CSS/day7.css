@@ -1,0 +1,81 @@
+/*Question:
+Create a separate folder named css inside your portfolio project. Inside it, create an external CSS file named style.css and connect it to your existing index.html file.
+Answer:
+I created a separate folder named css inside my Personal Portfolio project. Inside the folder, I created an external stylesheet named style.css. I connected the stylesheet to my index.html file using the HTML <link> element with the rel attribute set to stylesheet and the correct file path in the href attribute.
+I also applied styling to a paragraph and checked the result in the browser to confirm that the external CSS file was working correctly.*/
+
+
+/*Practical Question 2 – Typography Styling
+
+Question:
+
+Style headings and paragraphs using different font sizes, font families, font weights, and text colours.*/
+p {
+    color: green;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/*Apply different background colours and spacing to the body, About, Skills, Learning Journey, and Education sections.*/
+body {
+    background-color: lightblue;
+}
+
+#about {
+    background-color: aqua;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+#skills {
+    background-color: beige;
+    padding: 20px;
+    margin: 20px;
+}
+
+#learningjourney {
+    background-color: bisque;
+    padding: 20px;
+    margin: 20px;
+}
+
+#education {
+    background-color: blanchedalmond;
+    padding: 20px;
+    margin: 20px;
+}
+
+/*Style the Education section with a light yellow background, 30px padding, 20px margin, and centered text.*/
+#education {
+    background-color: lightyellow;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+/*Question:
+
+Style the Skills section with a light cyan background, 25px padding, 15px margin, dark blue text, and left alignment.*/
+#skills {
+    background-color: lightcyan;
+    padding: 25px;
+    margin: 15px;
+    color: darkblue;
+    text-align: left;
+}
