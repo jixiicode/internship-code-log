@@ -1,0 +1,52 @@
+p {
+    color:green;
+}
+h1 {
+    font-size: 36px;
+    font-family: Arial;
+    font-weight: bold;
+}
+body{
+    background-color: lightblue;
+
+}
+#about {
+    background-color: aqua;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+h1 {
+    color: black;
+
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;   
+    font-size: 18px;
+}
+#skills{
+    background-color:lightcyan ;
+    padding: 25px;
+    margin:15px ;
+    color:darkblue;
+    text-align: left;
+}
+#learningjourney{
+    background-color:bisque;
+    padding:20px;
+    margin:20px;
+}
+#education{
+    background-color:lightyellow;
+    padding:30px;
+    margin: 20px;
+    text-align: center;
+}
+
+
+
