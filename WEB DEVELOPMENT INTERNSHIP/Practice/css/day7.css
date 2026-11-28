@@ -79,3 +79,84 @@ Style the Skills section with a light cyan background, 25px padding, 15px margin
     color: darkblue;
     text-align: left;
 }
+/*In your style.css file:
+1. Find your existing paragraph styling.
+2. Use an element selector to target all paragraphs.
+3. Change their text colour to dark green.
+4. Save the file and refresh your portfolio in the browser.*/
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color:darkgreen;
+    
+}
+/*Class Selector
+Now let's style multiple portfolio sections using a shared class.
+
+Your task:
+1. Open index.html.
+2. Identify two sections of your choice.
+3. Give both sections the same class name: portfolio-section.
+4. In style.css, use a class selector to:
+   - Set the background colour to lightyellow.
+   - Add 20px padding.
+   - Add 15px margin.*/
+
+.portfolio-section{
+    background-color: lightyellow;
+    padding:20px;
+    margin:15px;
+}
+/*Practical 3 – ID Selector
+Now style one specific section of your portfolio.
+
+Your task:
+
+Use your existing Education section, which has id="education".
+
+Apply these styles:
+1. Background colour: lavender
+2. Padding: 25px
+3. Margin: 20px
+4. Text alignment: center*/
+
+#education{
+    background-color: lavender;
+    padding:25px;
+    margin:20px;
+    text-align:center;
+}
+
+/*Practical 4 – Grouping Selector
+Now we'll style multiple headings together.
+
+Your task:
+
+Use a grouping selector to apply the following styles to all h1, h2, and h3 elements:
+1. Text colour: darkblue
+2. Font family: Arial
+3. Font weight: bold
+4. Text alignment: center*/
+h1, h2, h3{
+    color:darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+/*Practical 5 – Descendant Selector
+Final practical challenge
+Now let's style only the links inside your portfolio navigation bar.
+Your task:
+Use a descendant selector to target all anchor (a) elements inside your navigation (nav).
+Apply these styles:
+1. Text colour: darkblue
+2. Remove the underline from links.
+3. Font weight: bold
+4. Font size: 18px*/
+.nav a {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
